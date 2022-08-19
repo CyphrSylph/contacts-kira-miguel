@@ -1,3 +1,5 @@
+package contactApp;
+
 public class Contact {
     // Private variables for contact item
     private String name;
@@ -18,7 +20,7 @@ public class Contact {
     // Set String format for contact information
     @Override
     public String toString() {
-        return name + ":" + quantity;
+        return name + ":" + phoneNum;
     }
 
     // Getters & Setters
@@ -30,7 +32,7 @@ public class Contact {
         this.name = name;
     }
 
-    public int getPhoneNum() {
+    public String getPhoneNum() {
         return phoneNum;
     }
 

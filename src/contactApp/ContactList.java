@@ -1,9 +1,12 @@
+package contactApp;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactList {
 
     // Private field containing ArrayList of contact items
-    private ArrayList<Contact> contact;
+    private ArrayList<Contact> contacts;
 
     // Method to create a new contact list
     public ContactList() {
@@ -17,7 +20,7 @@ public class ContactList {
 
     // Method to remove contact from list
     public void removeContact(String contactName) {
-        int index = getIndex(contactName);
+        int index = getContactIndex(contactName);
         if(index > -1) {
             contacts.remove(index);
         }
@@ -28,7 +31,7 @@ public class ContactList {
         int index = -1;
         for(int i = 0; i < contacts.size(); i++) {
             Contact contact = contacts.get(i);
-            String contactInList = item.getName();
+            String contactInList = contacts.getName();
             if(contactInList.equalsIgnoreCase(contactName)) {
                 return i;
             }
@@ -41,7 +44,7 @@ public class ContactList {
         int index = getContactIndex(contactName);
         if(index > -1) {
             Contact contact = contacts.get(index);
-            contact.setPhoneNum(phonenNum);
+            contact.setPhoneNum(phoneNum);
         }
     }
 
@@ -69,6 +72,7 @@ public class ContactList {
         for(Contact contact : contacts) {
             contactStrings.add(contact.toString());
         }
+        return contactStrings;
     }
-    return contactStrings;
+
 }

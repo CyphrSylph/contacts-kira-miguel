@@ -20,7 +20,7 @@ public class Contact {
     // Set String format for contact information
     @Override
     public String toString() {
-        return name + ":" + phoneNum;
+        return name + " - " + phoneNum;
     }
 
     // Getters & Setters

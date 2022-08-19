@@ -31,7 +31,7 @@ public class ContactList {
         int index = -1;
         for(int i = 0; i < contacts.size(); i++) {
             Contact contact = contacts.get(i);
-            String contactInList = contacts.getName();
+            String contactInList = contact.getName();
             if(contactInList.equalsIgnoreCase(contactName)) {
                 return i;
             }
@@ -40,7 +40,7 @@ public class ContactList {
     }
 
     // Method to set the contact phone number based on name
-    public void setPhoneNum(String contactName, String phoneNUm) {
+    public void setPhoneNum(String contactName, String phoneNum) {
         int index = getContactIndex(contactName);
         if(index > -1) {
             Contact contact = contacts.get(index);

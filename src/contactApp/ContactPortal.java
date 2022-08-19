@@ -30,7 +30,7 @@ public class ContactPortal {
         try {
             Files.write(filePath, contactStrings);
         }  catch (IOException e) {
-            throw new RuntimeExecption(e);
+            throw new RuntimeException(e);
         }
     }
 

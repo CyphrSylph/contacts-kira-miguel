@@ -71,12 +71,12 @@ public class ContactPortal {
             Path folder = Paths.get("contact_list");
             Path file = Paths.get("contact_list", "contact.txt");
             if(Files.exists(folder)) {
-                System.out.println("Folder already exists");
+                System.out.println("Folder created.");
             } else {
                 Files.createDirectories(folder);
             }
             if(Files.exists(file)) {
-                System.out.println("File already exists");
+                System.out.println("Update Successful!");
             } else {
                 Files.createFile(file);
             }

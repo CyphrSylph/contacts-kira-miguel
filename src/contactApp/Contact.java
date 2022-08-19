@@ -14,7 +14,7 @@ public class Contact {
     // Create contact item from string
     public static Contact createString(String contactString) {
         String [] parts = contactString.split("-");
-        return new Contact(parts[0].trim(),(parts[1].trim()));
+        return new Contact(parts[0],(parts[1]));
     }
 
     // Set String format for contact information

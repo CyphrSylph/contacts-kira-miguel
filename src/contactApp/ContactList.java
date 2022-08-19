@@ -6,7 +6,7 @@ import java.util.List;
 public class ContactList {
 
     // Private field containing ArrayList of contact items
-    private ArrayList<Contact> contacts;
+    private static ArrayList<Contact> contacts;
 
     // Method to create a new contact list
     public ContactList() {
@@ -59,7 +59,7 @@ public class ContactList {
     }
 
     // Method to print contact list
-    public void printContacts() {
+    public static void printContacts() {
         System.out.println("Contact List");
         for(Contact contact: contacts) {
             System.out.println("\t" + contact);

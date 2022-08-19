@@ -1,5 +1,9 @@
 package contactApp;
 
+
+
+public class ContactGUI {
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -104,6 +108,7 @@ public class ContactGUI {
             System.out.println("Contact does not exist.");
         }
     }
+
 
 
 }
